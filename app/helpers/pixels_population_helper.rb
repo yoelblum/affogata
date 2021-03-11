@@ -1,7 +1,6 @@
 module PixelsPopulationHelper
   def draw_pixel(pixel)
     style =  %{background-color: rgb(#{pixel_rgb(pixel)}); width: #{pixel_width(pixel)}; height: #{pixel_height(pixel)};}
-    puts style
     content_tag(:div, nil, style: style, class: 'pixel')
   end
 

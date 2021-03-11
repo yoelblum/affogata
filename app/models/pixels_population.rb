@@ -11,7 +11,7 @@ class PixelsPopulation
 
   def grow_population
     5000.times do
-      @population = @population.shuffle
+      @population = @population.shuffle # i know this is wasteful, i'm going for readability :)
       random_dad = @population.first
       random_mom = @population.second
       baby = make_baby(random_dad, random_mom)
@@ -34,7 +34,7 @@ class PixelsPopulation
 
   def inspect
     puts "["
-    @population.each { |p| puts p.to_s }
+    @population.each { |p| puts p }
     puts "]"
   end
 end

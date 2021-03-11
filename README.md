@@ -2,10 +2,10 @@
 
 Pixels:
 
-0) clone the repo, bundle install
-1) Run ```bundle exec rails s```
-2) go to http://localhost:3000/pixels_population (refresh as much as u like)
-3) Alternative (through the console):
+1) clone the repo, bundle install
+2) Run ```bundle exec rails s```
+3) go to http://localhost:3000/pixels_population (refresh as much as u like)
+4) Alternative (through the console):
 ```bundle exec rails c```
 ```PixelsPopulation.new ```
 

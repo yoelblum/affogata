@@ -6,5 +6,5 @@ Pixels:
 1) Run ```bundle exec rails s```
 2) go to http://localhost:3000/pixels_population (refresh as much as u like)
 3) Alternative (through the console):
-```bundle exec rails c
-PixelsPopulation.new ```
+```bundle exec rails c```
+```PixelsPopulation.new ```

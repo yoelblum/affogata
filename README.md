@@ -15,7 +15,7 @@ Changes
 1) nitpicky but u dont have to have the backticks
 2) id INT: consider bigint (default in Rails now I think). INT is big (around 4 billion) but if u have 10 million users it's not impossible you'll run out!
 3) for the column "type" int is probably too big and the (8) donesnt do what you'd expect. tinyint is probably more approrpiate since i cant imagine there'll many types.
-4) relation_id_1, relation_type_1, relation_id_2, relation_type_2: it's probably ok to have two polymorphic fields but they should hold the name of the model they're attached to!
+4) relation_id_1, relation_type_1, relation_id_2, relation_type_2: it's rare but might be ok to have two polymorphic associations, for example a comment is commentable for post, article and comment but also belongs to moderatable (where mederator is either an Admin model or Moderator, for whatever reason its 2 different models). So if I understand the question it's basically asking if you should have more than one polymorphic association on a model; I'd say usually no but maybe sometimes it's ok :)
 5) TIMESTAMP: interesting choice, I didn't know the difference in mysql between datetime and timestamp. Rails goes for datetime (which will still work after 2038) but timestamp may be ok as well.
 
 
